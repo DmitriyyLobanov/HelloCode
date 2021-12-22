@@ -6,7 +6,6 @@ string[] week = { "Monday", "Tuesday", "Wednesday", "Thursday", "Friday", "Satur
 
 Console.WriteLine("Введите номер дня недели от 1 до 7:");
 int numberOfDay = int.Parse(Console.ReadLine());
-int iteracion = 0;
 
 
 if (numberOfDay <= week.Length)

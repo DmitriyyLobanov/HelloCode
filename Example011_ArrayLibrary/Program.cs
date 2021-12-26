@@ -1,53 +1,50 @@
-﻿void FillArray(int[] collection)
+﻿void fillArray(int[] collection)
 {
-    int length = collection.Length;
+    int lenght = collection.Length;
     int index = 0;
-    while (index < length)
+    while (index < lenght)
     {
+
         collection[index] = new Random().Next(1, 10);
-        //index = index + 1;
         index++;
     }
 }
 
-void PrintArray(int[] col)
+void printArray(int[] col)
 {
     int count = col.Length;
-    int position = 0;
-    while (position < count)
+    int posicion = 0;
+    while (posicion < count)
     {
-        Console.WriteLine(col[position]);
-        position++;
+        Console.Write(col[posicion]);
+        Console.Write(" ");
+        posicion++;
     }
 }
 
-int IndexOf(int[] collection, int find)
+int indexOf(int[] collection, int find) // Написание метода для поиска нужного элемента массива.
 {
     int count = collection.Length;
     int index = 0;
-    int position = -1;
+    int posicion = -1; // -1 введен для возврата в случае отсутствия искомого элемента в массиве.
     while (index < count)
     {
         if (collection[index] == find)
         {
-            position = index;
+            posicion = index;
             break;
         }
         index++;
     }
-    return position;
+    return posicion;
 }
 
-int[] array = new int[10];
+int[] array = new int[10]; // Создание нового массива целых чисел (по умолчанию под всеми индексами будут 0)
 
-FillArray(array);
-array[4] = 4;
-array[6] = 4;
-
-PrintArray(array);
+fillArray(array);
+printArray(array);
 Console.WriteLine();
 
-int pos = IndexOf(array, 444);
+int pos = indexOf(array, 4);
 Console.WriteLine(pos);
-
 

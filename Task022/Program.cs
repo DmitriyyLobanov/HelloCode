@@ -152,7 +152,7 @@ Input3DZ2:
     }
 
     double Distance = Math.Sqrt(Math.Pow((x2 - x1), 2) + Math.Pow((y2 - y1), 2) + Math.Pow((z2 - z1), 2));
-    Console.WriteLine($"Расстояние между точками А и В равно {Distance}.");
+    Console.WriteLine($"Расстояние между точками А и В равно {Math.Round(Distance, 2)}.");
 
 }
 

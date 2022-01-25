@@ -7,15 +7,3 @@ Console.WriteLine($"Преобразуемое десятичное число =
 
 string s = Convert.ToString(number, 2);
 Console.WriteLine($"Его двоичный эквивалент = {s}.");
-
-
-
-
-
-
-
-
-
-
-
-

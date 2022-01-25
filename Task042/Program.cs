@@ -10,7 +10,7 @@ Console.WriteLine("Введите числа через ENTER, если вы з�
 
 while (s != "q")
 {
-    s = Convert.ToString(Console.ReadLine());
+    s = Console.ReadLine();
     bool ResultOfParse = int.TryParse(s, out int number);
     if (number > 0)
     {
